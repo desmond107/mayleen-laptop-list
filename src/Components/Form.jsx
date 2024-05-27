@@ -145,13 +145,13 @@ function Form({ popUp, setPopUp, patients, setPatients, patient, setPatient }) {
       {popUp ? (
         <div className="overlay visible">
           <div className="popup visibleform">
-            <h2>register a new patient</h2>
+            <h2>register a new laptop</h2>
 
             <form action="#" className="form">
               {(onsubmit = (e) => handleSubmit(e))}
               <div className="form__field">
                 <label htmlFor="name" className="form__field__label">
-                  first name
+                  employee name
                 </label>
 
                 {nameErr === true ? (
@@ -159,20 +159,20 @@ function Form({ popUp, setPopUp, patients, setPatients, patient, setPatient }) {
                     <input
                       type="text"
                       id="name"
-                      placeholder="write your first name"
+                      placeholder="input employee name"
                       className="form__field__input inputError"
                       value={fname}
                       onChange={(e) => checkFieldName(e)}
                     />
 
-                    <p className="showError">this first name is required</p>
+                    <p className="showError">employee name is required</p>
                   </>
                 ) : (
                   <>
                     <input
                       type="text"
                       id="name"
-                      placeholder="write your first name"
+                      placeholder="Input employee name"
                       className="form__field__input"
                       value={fname}
                       onChange={(e) => checkFieldName(e)}
@@ -183,8 +183,8 @@ function Form({ popUp, setPopUp, patients, setPatients, patient, setPatient }) {
                 )}
               </div>
               <div className="form__field">
-                <label htmlFor="surname" className="form__field__label">
-                  surname
+                <label htmlFor="Laptop model" className="form__field__label">
+                  Laptop model
                 </label>
 
                 {surnameErr === true ? (
@@ -192,12 +192,12 @@ function Form({ popUp, setPopUp, patients, setPatients, patient, setPatient }) {
                     <input
                       type="text"
                       id="surname"
-                      placeholder="write your surname"
+                      placeholder="Input laptop model"
                       className="form__field__input inputError"
                       onChange={(e) => checkFieldSurname(e)}
                       value={surname}
                     />
-                    <p className="showError">the surname is required</p>
+                    <p className="showError">Input laptop model</p>
                   </>
                 ) : (
                   <>
@@ -215,28 +215,28 @@ function Form({ popUp, setPopUp, patients, setPatients, patient, setPatient }) {
               </div>
               <div className="form__field">
                 <label htmlFor="email" className="form__field__label">
-                  E-mail address
+                  Laptop serial number
                 </label>
 
                 {emailErr === true ? (
                   <>
                     <input
-                      type="email"
-                      id="email"
+                      type="text"
+                      id="text"
                       placeholder="write your e-mail address"
                       className="form__field__input inputError"
                       autoComplete="off"
                       onChange={(e) => checkFieldEmail(e)}
-                      value={email}
+                      value={text}
                     />
-                    <p className="showError">the email field is required</p>
+                    <p className="showError">the  serial number field is required</p>
                   </>
                 ) : (
                   <>
                     <input
-                      type="email"
+                      type="text"
                       id="email"
-                      placeholder="write your e-mail address"
+                      placeholder="write your serial number"
                       className="form__field__input"
                       autoComplete="off"
                       onChange={(e) => checkFieldEmail(e)}
@@ -248,7 +248,7 @@ function Form({ popUp, setPopUp, patients, setPatients, patient, setPatient }) {
               </div>
               <div className="form__field">
                 <label htmlFor="age" className="form__field__label">
-                  Your age
+                  laptop number
                 </label>
 
                 {ageErr === true ? (
@@ -259,13 +259,13 @@ function Form({ popUp, setPopUp, patients, setPatients, patient, setPatient }) {
                       placeholder="write your age in numbers"
                       className="form__field__input inputError"
                       autocomplete="off"
-                      min="12"
-                      max="100"
+                      min="1"
+                      max="1000"
                       onChange={(e) => checkFieldAge(e)}
                       value={age}
                     />
                     <p className="showError">
-                      the age field is between 12yr - 100yr
+                      the age field is between 1yr - 1000yr
                     </p>
                   </>
                 ) : (
@@ -276,8 +276,8 @@ function Form({ popUp, setPopUp, patients, setPatients, patient, setPatient }) {
                       placeholder="write your age in numbers"
                       className="form__field__input"
                       autocomplete="off"
-                      min="12"
-                      max="100"
+                      min="1"
+                      max="1000"
                       onChange={(e) => checkFieldAge(e)}
                       value={age}
                     />
@@ -287,27 +287,27 @@ function Form({ popUp, setPopUp, patients, setPatients, patient, setPatient }) {
               </div>
               <div className="form__field">
                 <label htmlFor="symptoms" className="form__field__label">
-                  Symptoms
+                  Laptop description
                 </label>
                 {symptomsErr === true ? (
                   <>
                     <textarea
                       rows="6"
                       id="symptoms"
-                      placeholder="write the symptoms"
+                      placeholder="write the description"
                       className="form__field__input inputError"
                       autocomplete="off"
                       onChange={(e) => checkFieldSymptoms(e)}
                       value={symptoms}
                     />
-                    <p className="showError">the symptoms field is required</p>
+                    <p className="showError">the description field is required</p>
                   </>
                 ) : (
                   <>
                     <textarea
                       rows="6"
                       id="symptoms"
-                      placeholder="write the symptoms"
+                      placeholder="write the description"
                       className="form__field__input"
                       autocomplete="off"
                       onChange={(e) => checkFieldSymptoms(e)}
@@ -320,7 +320,7 @@ function Form({ popUp, setPopUp, patients, setPatients, patient, setPatient }) {
 
               <div className="form__button">
                 <button type="submit" className="btn btn--save">
-                  {patient.id ? 'Save edit' : 'save patient'}
+                  {patient.id ? 'Save edit' : 'save laptop'}
                 </button>
                 <button
                   type="submit"

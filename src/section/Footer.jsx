@@ -6,7 +6,7 @@ function Footer() {
       </p>
       <p className="copyright">
         Copyright by{' '}
-        <a href="https://www.alexandersstudio.uk">@alexander UX/UI</a> developer
+        <a href="https://mayleencorp.org/">@mayleen corporation</a> developer
       </p>
     </div>
   )

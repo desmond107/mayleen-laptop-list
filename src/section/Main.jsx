@@ -27,7 +27,7 @@ function Main({
           </>
         ) : (
           <div className="empty">
-            <h4>There are no patients registered at this time</h4>
+            <h4>There are no laptops registered at this time</h4>
             <p>Start by registering one</p>
 
             <img src="../img/register.svg" alt="register" />

@@ -1,7 +1,7 @@
 function Card({ user, setPatient, deletePatient }) {
   function handleDelete() {
     const answer = confirm(
-      `Are you sure you want to delete this patient ${user.fname}`
+      `Are you sure you want to delete this laptop ${user.fname}`
     )
 
     if (answer) {
@@ -12,10 +12,10 @@ function Card({ user, setPatient, deletePatient }) {
     <div className="main__cards__card">
       <div className="main__cards__card__top">
         <div className="main__cards__card__top--years">
-          <p className="tag">years</p>
+          <p className="tag">Laptop num</p>
           <h3>
             {user.age}
-            <span>years old</span>
+            <span>l.n</span>
           </h3>
         </div>
         <div className="main__cards__card__top__action">
@@ -28,13 +28,13 @@ function Card({ user, setPatient, deletePatient }) {
         </div>
       </div>
       <div className="main__cards__card__info">
-        <p className="main__cards__card__info--title">symptoms</p>
+        <p className="main__cards__card__info--title">description/</p>
         <p className="main__cards__card__info--text">{user.symptoms}</p>
       </div>
       <div className="main__cards__card__footer">
         <img src="../img/user.svg" alt="user" />
         <div className="main__cards__card__footer__info">
-          <p className="main__cards__card__footer__info--title">patient name</p>
+          <p className="main__cards__card__footer__info--title">Employee name</p>
           <p className="main__cards__card__footer__info--name">
             {user.fname} {user.surname}
           </p>
