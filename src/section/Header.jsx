@@ -30,7 +30,7 @@ function Header({ patientsQty, setPopUp }) {
         </div>
 
         <div className="header__boxes__information">
-          <Box Img="user" text="patients" register={patientsQty} />
+          <Box Img="user" text="laptop" register={patientsQty} />
           <Box Img="booking" text="bookings" register={2} />
         <div className="header__boxes__date">
           <div className="header__boxes__date header__date">
